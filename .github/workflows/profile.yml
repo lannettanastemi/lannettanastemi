@@ -1,0 +1,40 @@
+name: profile
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # PROFILE_TOKEN — личный токен (read-only) для закрытых репозиториев; без него — урезанный режим.
+      - run: node snake/gen.mjs dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+      - run: node cards/gen.mjs dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+      - name: publish to output branch
+        working-directory: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git init -q -b output
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -qm "profile $(date -u +%F)"
+          git push -qf "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
