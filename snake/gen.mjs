@@ -129,7 +129,7 @@ function render(weeks, theme) {
 
     const out = [];
     out.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">`);
-    out.push(`<title>${LOGIN}: змейка ест коммиты за год</title><style>${css}</style>`);
+    out.push(`<title>${LOGIN}: contributions</title><style>${css}</style>`);
     out.push(`<g fill="${theme.text}" font-family="'JetBrains Mono',ui-monospace,Consolas,monospace" font-size="10">`);
     for (const [w, t] of months) if (x(w) + 20 <= W) out.push(`<text x="${x(w)}" y="${PAD + 10}">${t}</text>`);
     out.push('</g>');

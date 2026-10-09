@@ -14,6 +14,8 @@ const W = 743;
 const PAD = 16;
 const FONT = "'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace";
 const LINES = 8;
+// true — сообщения коммитов из закрытых репозиториев видны (названия репозиториев — никогда), false — плашка-цензура.
+const PRIVATE_MESSAGES = false;
 const CELL = 11;
 const GAP = 3;
 const DAYS = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
@@ -108,13 +110,13 @@ function ago(c, now) {
 function terminal(commits, theme) {
     const LH = 22;
     const CW = 7.22;
-    const H = PAD * 2 + LH * (LINES + 2) - 6;
+    const shown = commits.slice(0, LINES);
+    const H = PAD * 2 + LH * (shown.length + 2) - 6;
     const cmd = `git log --oneline -${LINES}`;
     const typeStart = 400;
     const typeStep = 55;
     const linesStart = typeStart + cmd.length * typeStep + 350;
     const lineStep = 110;
-    const shown = commits.slice(0, LINES);
     const doneAt = linesStart + shown.length * lineStep + 200;
     const base = n => PAD + 13 + n * LH;
     const promptX = PAD + 4 * CW;
@@ -147,7 +149,7 @@ function terminal(commits, theme) {
         const y = base(i + 1);
         const msgX = PAD + 9 * CW;
         const parts = [`<text x="${PAD}" y="${y}" fill="${theme.accent}">${c.oid.slice(0, 7)}</text>`];
-        if (c.private) {
+        if (c.private && (!PRIVATE_MESSAGES || c.dayOnly)) {
             const w = Math.min(Math.max(c.msg.length, 8), 60) * CW;
             parts.push(`<rect x="${msgX}" y="${y - 9}" width="${w.toFixed(1)}" height="11" rx="2" fill="${theme.bar}"/>`);
         } else {
@@ -189,7 +191,7 @@ function hours(commits, theme, hasHours) {
 
     const out = [];
     out.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">`);
-    out.push(`<title>${LOGIN}: когда я коммичу</title>`);
+    out.push(`<title>${LOGIN}: activity by hour</title>`);
     out.push(`<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="8" fill="none" stroke="${theme.border}"/>`);
     out.push(`<g font-family="${FONT}" font-size="10" fill="${theme.text}">`);
     for (const h of [0, 6, 12, 18]) out.push(`<text x="${x(h)}" y="${TOP - 8}">${String(h).padStart(2, '0')}</text>`);
@@ -199,10 +201,10 @@ function hours(commits, theme, hasHours) {
         out.push(`<rect x="${x(h)}" y="${y(d)}" width="${CELL}" height="${CELL}" rx="${r}" fill="${theme.levels[lvl(n)]}"><title>${DAYS[d]} ${String(h).padStart(2, '0')}:00 — ${n}</title></rect>`);
     }));
     out.push(`<g font-family="${FONT}" font-size="12">`);
-    out.push(`<text x="${sx}" y="${TOP - 8}" font-size="10" fill="${theme.text}">когда я коммичу · ${TZ_LABEL}</text>`);
+    out.push(`<text x="${sx}" y="${TOP - 8}" font-size="10" fill="${theme.text}">${TZ_LABEL}</text>`);
     const rows = hasHours && total
         ? [['пик', `${String(peak).padStart(2, '0')}:00–${String((peak + 1) % 24).padStart(2, '0')}:00`], ['ночью, 00–06', pct(night)], ['в выходные', pct(weekend)], ['коммитов', String(total)]]
-        : [['нет данных', '']];
+        : [];
     rows.forEach(([k, v], i) => {
         const ry = TOP + 9 + i * 22;
         out.push(`<text x="${sx}" y="${ry}" fill="${theme.text}">${k}</text><text x="${W - PAD}" y="${ry}" text-anchor="end" fill="${i === 0 ? theme.accent : theme.head}">${v}</text>`);
