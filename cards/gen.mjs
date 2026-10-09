@@ -5,6 +5,7 @@
 import { createHash } from 'node:crypto';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { gql, ownCommits } from '../shared/github.mjs';
 
 const LOGIN = process.env.GH_LOGIN || 'lannettanastemi';
 const OUT = process.argv[2] || 'dist';
@@ -27,42 +28,14 @@ const THEMES = {
 
 const esc = s => s.replace(/[<>&"]/g, c => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' })[c]);
 
-async function gql(query, variables) {
-    const res = await fetch('https://api.github.com/graphql', {
-        method: 'POST',
-        headers: { Authorization: `bearer ${process.env.GITHUB_TOKEN}`, 'Content-Type': 'application/json', 'User-Agent': 'cards-gen' },
-        body: JSON.stringify({ query, variables }),
-    });
-    const json = await res.json();
-    if (!res.ok || json.errors) throw new Error(JSON.stringify(json.errors || json));
-    return json.data;
-}
-
-const REPOS = `query($id: ID!) { viewer { repositories(first: 100, ownerAffiliations: [OWNER, ORGANIZATION_MEMBER, COLLABORATOR], orderBy: {field: PUSHED_AT, direction: DESC}) {
-    nodes { isPrivate isFork defaultBranchRef { target { ... on Commit { history(first: 100, author: {id: $id}) {
-        nodes { oid authoredDate messageHeadline } } } } } } } } }`;
-
 const CALENDAR = `query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar {
     weeks { contributionDays { date contributionCount } } } } } }`;
 
 // Коммиты: { oid, date, msg, private }. С личным токеном — настоящие, иначе — из календаря (без часов).
 async function fetchCommits() {
     if (!process.env.GITHUB_TOKEN) return { commits: demo(), hours: true };
-    const { viewer } = await gql('{ viewer { id login } }').catch(() => ({ viewer: {} }));
-    if (viewer.login === LOGIN) {
-        const data = await gql(REPOS, { id: viewer.id });
-        const seen = new Set();
-        const commits = [];
-        for (const repo of data.viewer.repositories.nodes) {
-            if (repo.isFork) continue;
-            for (const c of repo.defaultBranchRef?.target?.history?.nodes || []) {
-                if (seen.has(c.oid)) continue;
-                seen.add(c.oid);
-                commits.push({ oid: c.oid, date: new Date(c.authoredDate), msg: c.messageHeadline, private: repo.isPrivate });
-            }
-        }
-        return { commits: commits.sort((a, b) => b.date - a.date), hours: true };
-    }
+    const own = await ownCommits(LOGIN, new Date(Date.now() - 365 * 864e5));
+    if (own) return { commits: own, hours: true };
     const data = await gql(CALENDAR, { login: LOGIN });
     const days = data.user.contributionsCollection.contributionCalendar.weeks.flatMap(w => w.contributionDays).reverse();
     const commits = [];

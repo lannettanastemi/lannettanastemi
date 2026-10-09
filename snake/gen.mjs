@@ -2,8 +2,10 @@
 // node snake/gen.mjs [outDir]   — без GITHUB_TOKEN рисует демо-данные.
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { gql, ownCommits } from '../shared/github.mjs';
 
 const LOGIN = process.env.GH_LOGIN || 'lannettanastemi';
+const TZ = 'Asia/Qyzylorda';
 const OUT = process.argv[2] || 'dist';
 const CELL = 11;
 const GAP = 3;
@@ -23,18 +25,20 @@ const level = n => (!n ? 0 : n <= 2 ? 1 : n <= 5 ? 2 : n <= 10 ? 3 : 4);
 const QUERY = `query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar {
     weeks { contributionDays { date weekday contributionCount } } } } } }`;
 
+// Календарь задаёт сетку, но закрытых контрибуций в нём нет (fine-grained токен) — досчитываем их по своим коммитам.
 async function fetchWeeks() {
-    const token = process.env.GITHUB_TOKEN;
-    if (!token) return demo();
-    const res = await fetch('https://api.github.com/graphql', {
-        method: 'POST',
-        headers: { Authorization: `bearer ${token}`, 'Content-Type': 'application/json', 'User-Agent': 'snake-gen' },
-        body: JSON.stringify({ query: QUERY, variables: { login: LOGIN } }),
-    });
-    const json = await res.json();
-    if (!res.ok || json.errors) throw new Error(JSON.stringify(json.errors || json));
-    return json.data.user.contributionsCollection.contributionCalendar.weeks
+    if (!process.env.GITHUB_TOKEN) return demo();
+    const data = await gql(QUERY, { login: LOGIN });
+    const weeks = data.user.contributionsCollection.contributionCalendar.weeks
         .map(w => w.contributionDays.map(d => ({ date: d.date, d: d.weekday, n: d.contributionCount })));
+    const own = await ownCommits(LOGIN, new Date(`${weeks[0][0].date}T00:00:00Z`));
+    if (own) {
+        const perDay = new Map();
+        const day = new Intl.DateTimeFormat('en-CA', { timeZone: TZ });
+        for (const c of own) perDay.set(day.format(c.date), (perDay.get(day.format(c.date)) || 0) + 1);
+        for (const d of weeks.flat()) d.n = Math.max(d.n, perDay.get(d.date) || 0);
+    }
+    return weeks;
 }
 
 function demo() {
