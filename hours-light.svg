@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="743" height="145" viewBox="0 0 743 145">
+<title>lannettanastemi: activity by hour</title>
+<rect x=".5" y=".5" width="742" height="144" rx="8" fill="none" stroke="rgba(11,11,13,0.1)"/>
+<g font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8c8c93">
+<text x="40" y="26">00</text>
+<text x="124" y="26">06</text>
+<text x="208" y="26">12</text>
+<text x="292" y="26">18</text>
+<text x="16" y="43">пн</text>
+<text x="16" y="71">ср</text>
+<text x="16" y="99">пт</text>
+<text x="16" y="127">вс</text>
+</g>
+<rect x="40" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 00:00 — 0</title></rect>
+<rect x="54" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 01:00 — 0</title></rect>
+<rect x="68" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 02:00 — 0</title></rect>
+<rect x="82" y="34" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пн 03:00 — 1</title></rect>
+<rect x="96" y="34" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пн 04:00 — 1</title></rect>
+<rect x="110" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 05:00 — 0</title></rect>
+<rect x="124" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 06:00 — 0</title></rect>
+<rect x="138" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 07:00 — 0</title></rect>
+<rect x="152" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 08:00 — 0</title></rect>
+<rect x="166" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 09:00 — 0</title></rect>
+<rect x="180" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 10:00 — 0</title></rect>
+<rect x="194" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 11:00 — 0</title></rect>
+<rect x="208" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 12:00 — 0</title></rect>
+<rect x="222" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 13:00 — 0</title></rect>
+<rect x="236" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 14:00 — 0</title></rect>
+<rect x="250" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 15:00 — 0</title></rect>
+<rect x="264" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 16:00 — 0</title></rect>
+<rect x="278" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 17:00 — 0</title></rect>
+<rect x="292" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 18:00 — 0</title></rect>
+<rect x="306" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 19:00 — 0</title></rect>
+<rect x="320" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 20:00 — 0</title></rect>
+<rect x="334" y="34" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пн 21:00 — 1</title></rect>
+<rect x="348" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 22:00 — 0</title></rect>
+<rect x="362" y="34" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пн 23:00 — 0</title></rect>
+<rect x="40" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 00:00 — 0</title></rect>
+<rect x="54" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 01:00 — 0</title></rect>
+<rect x="68" y="48" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>вт 02:00 — 2</title></rect>
+<rect x="82" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 03:00 — 0</title></rect>
+<rect x="96" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 04:00 — 0</title></rect>
+<rect x="110" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 05:00 — 0</title></rect>
+<rect x="124" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 06:00 — 0</title></rect>
+<rect x="138" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 07:00 — 0</title></rect>
+<rect x="152" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 08:00 — 0</title></rect>
+<rect x="166" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 09:00 — 0</title></rect>
+<rect x="180" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 10:00 — 0</title></rect>
+<rect x="194" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 11:00 — 0</title></rect>
+<rect x="208" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 12:00 — 0</title></rect>
+<rect x="222" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 13:00 — 0</title></rect>
+<rect x="236" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 14:00 — 0</title></rect>
+<rect x="250" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 15:00 — 0</title></rect>
+<rect x="264" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 16:00 — 0</title></rect>
+<rect x="278" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 17:00 — 0</title></rect>
+<rect x="292" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 18:00 — 0</title></rect>
+<rect x="306" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 19:00 — 0</title></rect>
+<rect x="320" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 20:00 — 0</title></rect>
+<rect x="334" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 21:00 — 0</title></rect>
+<rect x="348" y="48" width="11" height="11" rx="2.42" fill="#7398ff"><title>вт 22:00 — 4</title></rect>
+<rect x="362" y="48" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вт 23:00 — 0</title></rect>
+<rect x="40" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 00:00 — 3</title></rect>
+<rect x="54" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 01:00 — 1</title></rect>
+<rect x="68" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 02:00 — 0</title></rect>
+<rect x="82" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 03:00 — 3</title></rect>
+<rect x="96" y="62" width="11" height="11" rx="2.42" fill="#7398ff"><title>ср 04:00 — 5</title></rect>
+<rect x="110" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 05:00 — 1</title></rect>
+<rect x="124" y="62" width="11" height="11" rx="2.42" fill="#7398ff"><title>ср 06:00 — 5</title></rect>
+<rect x="138" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 07:00 — 1</title></rect>
+<rect x="152" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 08:00 — 0</title></rect>
+<rect x="166" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 09:00 — 0</title></rect>
+<rect x="180" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 10:00 — 0</title></rect>
+<rect x="194" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 11:00 — 0</title></rect>
+<rect x="208" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 12:00 — 0</title></rect>
+<rect x="222" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 13:00 — 0</title></rect>
+<rect x="236" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 14:00 — 0</title></rect>
+<rect x="250" y="62" width="11" height="11" rx="2.42" fill="#7398ff"><title>ср 15:00 — 5</title></rect>
+<rect x="264" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 16:00 — 1</title></rect>
+<rect x="278" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 17:00 — 1</title></rect>
+<rect x="292" y="62" width="11" height="11" rx="2.42" fill="#ebedf0"><title>ср 18:00 — 0</title></rect>
+<rect x="306" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 19:00 — 3</title></rect>
+<rect x="320" y="62" width="11" height="11" rx="2.42" fill="#7398ff"><title>ср 20:00 — 6</title></rect>
+<rect x="334" y="62" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>ср 21:00 — 3</title></rect>
+<rect x="348" y="62" width="11" height="11" rx="2.42" fill="#7398ff"><title>ср 22:00 — 4</title></rect>
+<rect x="362" y="62" width="11" height="11" rx="2.42" fill="#1854ff"><title>ср 23:00 — 9</title></rect>
+<rect x="40" y="76" width="11" height="11" rx="2.42" fill="#1854ff"><title>чт 00:00 — 7</title></rect>
+<rect x="54" y="76" width="11" height="11" rx="2.42" fill="#12306f"><title>чт 01:00 — 13</title></rect>
+<rect x="68" y="76" width="11" height="11" rx="2.42" fill="#7398ff"><title>чт 02:00 — 5</title></rect>
+<rect x="82" y="76" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>чт 03:00 — 2</title></rect>
+<rect x="96" y="76" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>чт 04:00 — 3</title></rect>
+<rect x="110" y="76" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>чт 05:00 — 3</title></rect>
+<rect x="124" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 06:00 — 0</title></rect>
+<rect x="138" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 07:00 — 0</title></rect>
+<rect x="152" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 08:00 — 0</title></rect>
+<rect x="166" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 09:00 — 0</title></rect>
+<rect x="180" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 10:00 — 0</title></rect>
+<rect x="194" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 11:00 — 0</title></rect>
+<rect x="208" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 12:00 — 0</title></rect>
+<rect x="222" y="76" width="11" height="11" rx="2.42" fill="#7398ff"><title>чт 13:00 — 6</title></rect>
+<rect x="236" y="76" width="11" height="11" rx="2.42" fill="#7398ff"><title>чт 14:00 — 5</title></rect>
+<rect x="250" y="76" width="11" height="11" rx="2.42" fill="#1854ff"><title>чт 15:00 — 8</title></rect>
+<rect x="264" y="76" width="11" height="11" rx="2.42" fill="#7398ff"><title>чт 16:00 — 6</title></rect>
+<rect x="278" y="76" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>чт 17:00 — 3</title></rect>
+<rect x="292" y="76" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>чт 18:00 — 2</title></rect>
+<rect x="306" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 19:00 — 0</title></rect>
+<rect x="320" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 20:00 — 0</title></rect>
+<rect x="334" y="76" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>чт 21:00 — 1</title></rect>
+<rect x="348" y="76" width="11" height="11" rx="2.42" fill="#ebedf0"><title>чт 22:00 — 0</title></rect>
+<rect x="362" y="76" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>чт 23:00 — 2</title></rect>
+<rect x="40" y="90" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пт 00:00 — 1</title></rect>
+<rect x="54" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 01:00 — 0</title></rect>
+<rect x="68" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 02:00 — 0</title></rect>
+<rect x="82" y="90" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пт 03:00 — 2</title></rect>
+<rect x="96" y="90" width="11" height="11" rx="2.42" fill="#1854ff"><title>пт 04:00 — 9</title></rect>
+<rect x="110" y="90" width="11" height="11" rx="2.42" fill="#1854ff"><title>пт 05:00 — 9</title></rect>
+<rect x="124" y="90" width="11" height="11" rx="2.42" fill="#7398ff"><title>пт 06:00 — 4</title></rect>
+<rect x="138" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 07:00 — 0</title></rect>
+<rect x="152" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 08:00 — 0</title></rect>
+<rect x="166" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 09:00 — 0</title></rect>
+<rect x="180" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 10:00 — 0</title></rect>
+<rect x="194" y="90" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пт 11:00 — 1</title></rect>
+<rect x="208" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 12:00 — 0</title></rect>
+<rect x="222" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 13:00 — 0</title></rect>
+<rect x="236" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 14:00 — 0</title></rect>
+<rect x="250" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 15:00 — 0</title></rect>
+<rect x="264" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 16:00 — 0</title></rect>
+<rect x="278" y="90" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пт 17:00 — 3</title></rect>
+<rect x="292" y="90" width="11" height="11" rx="2.42" fill="#7398ff"><title>пт 18:00 — 5</title></rect>
+<rect x="306" y="90" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пт 19:00 — 2</title></rect>
+<rect x="320" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 20:00 — 0</title></rect>
+<rect x="334" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 21:00 — 0</title></rect>
+<rect x="348" y="90" width="11" height="11" rx="2.42" fill="#ebedf0"><title>пт 22:00 — 0</title></rect>
+<rect x="362" y="90" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>пт 23:00 — 1</title></rect>
+<rect x="40" y="104" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>сб 00:00 — 2</title></rect>
+<rect x="54" y="104" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>сб 01:00 — 2</title></rect>
+<rect x="68" y="104" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>сб 02:00 — 1</title></rect>
+<rect x="82" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 03:00 — 0</title></rect>
+<rect x="96" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 04:00 — 0</title></rect>
+<rect x="110" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 05:00 — 0</title></rect>
+<rect x="124" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 06:00 — 0</title></rect>
+<rect x="138" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 07:00 — 0</title></rect>
+<rect x="152" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 08:00 — 0</title></rect>
+<rect x="166" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 09:00 — 0</title></rect>
+<rect x="180" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 10:00 — 0</title></rect>
+<rect x="194" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 11:00 — 0</title></rect>
+<rect x="208" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 12:00 — 0</title></rect>
+<rect x="222" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 13:00 — 0</title></rect>
+<rect x="236" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 14:00 — 0</title></rect>
+<rect x="250" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 15:00 — 0</title></rect>
+<rect x="264" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 16:00 — 0</title></rect>
+<rect x="278" y="104" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>сб 17:00 — 2</title></rect>
+<rect x="292" y="104" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>сб 18:00 — 1</title></rect>
+<rect x="306" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 19:00 — 0</title></rect>
+<rect x="320" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 20:00 — 0</title></rect>
+<rect x="334" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 21:00 — 0</title></rect>
+<rect x="348" y="104" width="11" height="11" rx="2.42" fill="#ebedf0"><title>сб 22:00 — 0</title></rect>
+<rect x="362" y="104" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>сб 23:00 — 1</title></rect>
+<rect x="40" y="118" width="11" height="11" rx="2.42" fill="#7398ff"><title>вс 00:00 — 5</title></rect>
+<rect x="54" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 01:00 — 0</title></rect>
+<rect x="68" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 02:00 — 0</title></rect>
+<rect x="82" y="118" width="11" height="11" rx="2.42" fill="#1854ff"><title>вс 03:00 — 7</title></rect>
+<rect x="96" y="118" width="11" height="11" rx="2.42" fill="#7398ff"><title>вс 04:00 — 5</title></rect>
+<rect x="110" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 05:00 — 0</title></rect>
+<rect x="124" y="118" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>вс 06:00 — 1</title></rect>
+<rect x="138" y="118" width="11" height="11" rx="2.42" fill="#7398ff"><title>вс 07:00 — 4</title></rect>
+<rect x="152" y="118" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>вс 08:00 — 1</title></rect>
+<rect x="166" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 09:00 — 0</title></rect>
+<rect x="180" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 10:00 — 0</title></rect>
+<rect x="194" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 11:00 — 0</title></rect>
+<rect x="208" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 12:00 — 0</title></rect>
+<rect x="222" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 13:00 — 0</title></rect>
+<rect x="236" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 14:00 — 0</title></rect>
+<rect x="250" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 15:00 — 0</title></rect>
+<rect x="264" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 16:00 — 0</title></rect>
+<rect x="278" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 17:00 — 0</title></rect>
+<rect x="292" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 18:00 — 0</title></rect>
+<rect x="306" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 19:00 — 0</title></rect>
+<rect x="320" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 20:00 — 0</title></rect>
+<rect x="334" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 21:00 — 0</title></rect>
+<rect x="348" y="118" width="11" height="11" rx="2.42" fill="#ebedf0"><title>вс 22:00 — 0</title></rect>
+<rect x="362" y="118" width="11" height="11" rx="2.42" fill="#c3d1ff"><title>вс 23:00 — 1</title></rect>
+<g font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12">
+<text x="416" y="26" font-size="10" fill="#8c8c93">UTC+5</text>
+<text x="416" y="43" fill="#8c8c93">пик</text><text x="727" y="43" text-anchor="end" fill="#1854ff">04:00–05:00</text>
+<text x="416" y="65" fill="#8c8c93">ночью, 00–06</text><text x="727" y="65" text-anchor="end" fill="#0b0b0d">47%</text>
+<text x="416" y="87" fill="#8c8c93">в выходные</text><text x="727" y="87" text-anchor="end" fill="#0b0b0d">17%</text>
+<text x="416" y="109" fill="#8c8c93">коммитов</text><text x="727" y="109" text-anchor="end" fill="#0b0b0d">196</text>
+</g></svg>
